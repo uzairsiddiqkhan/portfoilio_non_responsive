@@ -17,12 +17,12 @@ body {
   width: 100%;
 }
 
-.home .homeBg {
+ .homeBg {
   position: absolute;
   background-image: url(../imgs/waterpatterm.png);
   width: 100%;
-  height: 58%;
-  z-index: 1;
+  height: 100%;
+  z-index: 5;
 }
 
 
@@ -368,6 +368,7 @@ nav img {
   background: #393e46;
   left: -20%;
   bottom: 25%;
+  
 }
 
 .aboutMe .services .designBorder {
@@ -380,6 +381,9 @@ nav img {
   transform: rotate(-45deg);
   left: -22%;
   bottom: 152%;
+  background-position-x: 0px;
+
+ 
 }
 
 .skills .bgText {
