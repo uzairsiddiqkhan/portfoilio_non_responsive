@@ -14,27 +14,23 @@
 </head>
 
 <body>
-    <div class="homeBg">
-        <!-- <img src="./imgs/waterpatterm.png" alt=""> -->
-    </div>
-    
     <header id="homeHeader">
         <nav>
             <img src="./imgs/logo.png" alt="Logo">
 
             <ul class="navList">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
         </nav>
     </header>
-    
-    <div class="home">
-        
-       
+
+    <div class="home" id="home">
+
+
 
 
         <section class="firstSection">
@@ -104,7 +100,7 @@
 
 
 
-    <div class="aboutMe">
+    <div class="aboutMe" id="aboutMe">
 
 
         <section class="services">
@@ -199,6 +195,47 @@
             </div>
         </section>
 
+    </div>
+
+    <div class="portfolio" id="portfolio">
+        <div class="bg"></div>
+        <div class="bgText">Recent Work </div>
+        <div class="frontText">Recent Work </div>
+        <div class="work">
+            <div class="line">
+                <img src="./imgs/Rectangle 63.png" alt="">
+                <img src="./imgs/Rectangle 64.png" alt="">
+                <img src="./imgs/Rectangle 65.png" alt="">
+
+
+            </div>
+            <div class="line">
+                <img src="./imgs/Rectangle 66.png" alt="">
+                <img src="./imgs/Rectangle 67.png" alt="">
+                <img src="./imgs/Rectangle 65.png" alt="">
+
+            </div>
+            <button><a href="#"></a>View More</button>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="left">
+            <div class="text">Contact Me</div>
+            <div class="phoneNumber"> Phone : +92-314 2020 306</div>
+            <div class="whatsapp"> whatsapp : +92-314 2020 306</div>
+
+            <div class="email">Email : uzairsiddiqkhan@gmail.com</div>
+            <button><a href="#"></a>Download CV</button>
+
+        </div>
+        <div class="right">
+            <input type="text" name="" id="name" class="inputText" placeholder="Enter Your Name">
+            <input type="text" name="" id="email" class="inputText" placeholder="Enter your Email">
+            <textarea rows="20" id="email" class="textArea" placeholder="Enter your Query"></textarea>
+            <input type="button" name="submit" value="Submit" id="btnSubmit">
+        </div>
+        
     </div>
 
 

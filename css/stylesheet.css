@@ -5,11 +5,19 @@
   padding: 0;
 }
 
-body {
+html {
   scroll-behavior: smooth;
+
+}
+
+body {
   font-family: "poppins";
   background-color: #222831;
   color: white;
+  background-image: url(../imgs/waterpatterm.png);
+  background-repeat: no-repeat;
+  background-position-y: -16%;
+  background-size: contain;
 }
 
 .home {
@@ -17,13 +25,6 @@ body {
   width: 100%;
 }
 
- .homeBg {
-  position: absolute;
-  background-image: url(../imgs/waterpatterm.png);
-  width: 100%;
-  height: 100%;
-  z-index: 5;
-}
 
 
 header {
@@ -260,7 +261,9 @@ nav img {
   z-index: -2;
   background-color: #222831;
   background-image: url(../imgs/waterpatterm.png);
-  background-position: top;
+  background-position: left;
+  background-size: auto;
+
 }
 
 .dividerRectangularbg {
@@ -270,11 +273,12 @@ nav img {
   background-color: #222831;
   height: 800px;
   left: 30%;
-  top: -41.7%;
-  transform: rotate(-45deg);
+  top: -41.9%;
+  transform: rotate(135deg);
   z-index: -1;
   background-image: url(../imgs/waterpatterm.png);
-  background-position: top;
+  /* background-repeat: no-repeat; */
+  background-size: auto;
 }
 
 .divider {
@@ -351,7 +355,14 @@ nav img {
   width: 225px;
   background-color: #222831;
   border-radius: 24px;
+
 }
+
+.list .myservice:hover {
+  background-color: #393e46;
+
+}
+
 
 .list .myservice div {
   font-size: 20px;
@@ -368,7 +379,7 @@ nav img {
   background: #393e46;
   left: -20%;
   bottom: 25%;
-  
+
 }
 
 .aboutMe .services .designBorder {
@@ -383,30 +394,33 @@ nav img {
   bottom: 152%;
   background-position-x: 0px;
 
- 
+
 }
 
-.skills .bgText {
+.bgText {
   display: flex;
   justify-content: center;
   position: relative;
   font-size: 100px;
   color: #393e46;
   font-weight: 700;
+  top: -0.8em;
   opacity: 0.5;
 }
 
-.skills .frontText {
+.frontText {
   display: flex;
   justify-content: center;
   position: relative;
   font-size: 40px;
   font-weight: 700;
-  top: -15vh;
   letter-spacing: -0.02em;
+  top: -4.5em;
 }
 
 .skills .list {
+  position: relative;
+  top: -5em;
   display: flex;
   flex-direction: column;
   padding: 0px 22%;
@@ -444,9 +458,14 @@ nav img {
 }
 
 .listItem .bar .progDesign {
-  width: 18%;
   height: 20px;
+  width: 18%;
+  animation-name: progDesign;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function:step-end;
 }
+
 
 .listItem .bar .progWordpress {
   height: 20px;
@@ -471,4 +490,167 @@ nav img {
 .listItem .bar .progWeb {
   height: 20px;
   width: 20%;
+
+}
+
+.portfolio {
+  position: relative;
+  top: -3em;
+
+
+
+
+}
+
+.portfolio .bg {
+  background-color: #1d222a;
+  width: 100%;
+  height: 460px;
+  position: absolute;
+}
+
+.work {
+  position: relative;
+  top: -5em;
+  display: flex;
+  gap: 6vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.line {
+  display: flex;
+  gap: 3%;
+  align-items: center;
+  justify-content: center;
+}
+
+.line img {
+  cursor: pointer;
+}
+
+.line img:hover {}
+
+.work button {
+  position: relative;
+  top: 1.5em;
+  width: 15%;
+  padding: 7px;
+  font-family: 'poppins';
+  background-color: #393e46;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+}
+
+.work button:hover {
+
+  background-color: #00adb5;
+}
+
+
+.contact {
+  width: 100%;
+  height: 400px;
+  background-color: #1d222a;
+  display: flex;
+  align-items: center;
+
+
+
+}
+
+
+
+.contact .left {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding-left: 10%;
+  font-size: 20px;
+
+}
+
+.contact .left .text {
+  font-size: 40px;
+  font-family: 'poppins';
+  margin-bottom: 20px;
+
+}
+
+.contact .left button {
+  padding: 10px;
+  width: 75%;
+  border-radius: 7px;
+  font-size: 18px;
+  border: 0;
+  cursor: pointer;
+  background-color: #393e46;
+  color: white;
+  margin-top: 20px;
+}
+
+.contact .left button:hover {
+  background-color: #00adb5;
+}
+
+
+.contact .right {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding-right: 10%;
+}
+
+.contact .right .inputText {
+  width: 100%;
+
+  border-radius: 7px;
+  background-color: #393e46;
+  margin-bottom: 10px;
+  border: 0;
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'cursive', sans-serif;
+  color: white;
+
+}
+
+
+.contact .textArea {
+  border-radius: 7px;
+  border: 0;
+  width: 100%;
+  background-color: #393e46;
+
+  resize: none;
+  height: 150px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'cursive', sans-serif;
+  margin-bottom: 10px;
+  color: white;
+
+
+}
+
+.contact .right #btnSubmit {
+  padding: 10px;
+  width: 20%;
+  border-radius: 7px;
+  font-size: 18px;
+  border: 0;
+  cursor: pointer;
+  background-color: #393e46;
+  color: white;
+
+}
+
+.contact .right #btnSubmit:hover {
+  background-color: #00adb5;
+
 }
